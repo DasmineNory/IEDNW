@@ -1,0 +1,476 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #6a0dad;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #32cd32;
+  border-radius: 20px;
+  margin: 10px auto;
+  margin-top: 70px;
+  max-width: 80%;
+  box-shadow: 4px 4px 0px black;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.brand-name {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+  margin-right: 13px;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px black;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-icon:hover {
+  transform: scale(1.1);
+}
+
+.join-btn {
+  background-color: #00ff00;
+  border: none;
+  padding: 10px 15px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px black;
+  transition: background 0.2s ease-in-out;
+}
+
+.join-btn:hover {
+  background-color: #04da04;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.hero-content {
+  text-align: left;
+  color: white;
+  margin-left: 50px;
+}
+
+.hero-content h1,
+.hero-content h2 {
+  font-size: 48px;
+  margin: 5px 0;
+  color: #32cd32;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.highlight-box {
+  background-color: #00ff00;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px black;
+  display: inline-block;
+  transform: rotate(-5deg);
+}
+
+.contract-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 5px 5px 0px black;
+  margin-top: 20px;
+}
+
+.contract-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.contract-address {
+  border: none;
+  background: none;
+  font-size: 18px;
+  flex: 1;
+  outline: none;
+}
+
+.copy-btn {
+  background-color: #32cd32;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px black;
+}
+
+.hero-image img {
+  max-width: 400px;
+  margin-right: 50px;
+}
+
+/* Marquee Section */
+.marquee-section {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #00ff00;
+  padding: 10px 0;
+  box-shadow: 5px 5px 0px black;
+  position: relative;
+  width: 100%;
+}
+
+/* Marquee Content */
+.marquee {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  width: max-content; /* Ensure it extends beyond the container */
+  animation: marqueeScroll 10s linear infinite;
+}
+
+/* Marquee Icons */
+.marquee img {
+  height: 40px; /* Adjust icon size */
+}
+
+/* Marquee Animation */
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Tokenomics Section */
+.tokenomics-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #800080;
+}
+
+.tokenomics-title {
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Layout for Image + Cards */
+.tokenomics-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px; /* Increased space between image and boxes */
+  flex-wrap: wrap;
+}
+
+/* Image Section */
+.tokenomics-image img {
+  max-width: 400px;
+  height: auto;
+}
+
+/* Tokenomics Cards in 2x2 Grid */
+.tokenomics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+  gap: 20px; /* Space between boxes */
+}
+
+/* Individual Boxes */
+.tokenomics-card {
+  background-color: #4b0082; /* Matching the blue background */
+  color: #00ff00;
+  padding: 30px;
+  width: 280px; /* Increased size */
+  height: 150px; /* Increased size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0px black;
+}
+
+/* Subtitle (SUPPLY OF NUTS, TAXES, etc.) */
+.tokenomics-subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white; /* Keeps contrast */
+  margin-bottom: 5px; /* Reduced spacing */
+}
+
+/* Main Values (1 Billion, 0%, Locked, $Nuts) */
+.tokenomics-value {
+  font-size: 36px; /* Increased size */
+  font-weight: bold;
+  color: yellow;
+}
+
+/* Default Styles (Desktop First) */
+/* Already in your CSS, ensuring a good base */
+
+/* 📱 Mobile Styles */
+
+/* ✅ Default Mobile Styles (for screens below 1024px) */
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .hero-content h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contract-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 85%;
+    max-width: 300px;
+  }
+
+  .tokenomics-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+  }
+
+  .tokenomics-card {
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .meme-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  .meme-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .meme-box {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .copy-btn,
+  .join-btn {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+/* ✅ Tablet Styles (for screens below 768px) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .navbar .logo {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar .nav-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .navbar .nav-icons img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .navbar .join-btn {
+    margin-top: 15px;
+    width: 80%;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content h2 {
+    font-size: 18px;
+  }
+
+  .contract-container {
+    width: 95%;
+  }
+
+  .hero-image img {
+    width: 80%;
+  }
+
+  .tokenomics-card {
+    width: 95%;
+  }
+
+  .meme-grid {
+    width: 95%;
+  }
+}
+
+/* ✅ Small Phones (for screens below 480px) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar .nav-icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar .join-btn {
+    font-size: 14px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 16px;
+  }
+
+  .contract-container {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 75%;
+  }
+
+  .tokenomics-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .meme-grid {
+    width: 100%;
+  }
+
+  .copy-btn,
+  .join-btn {
+    width: 100%;
+  }
+}
