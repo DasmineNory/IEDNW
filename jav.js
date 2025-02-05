@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const joinButton = document.querySelector(".join-btn");
   if (joinButton) {
     joinButton.addEventListener("click", function () {
-      window.location.href = "https://t.me/BaseNutsCommunity"; // Example Telegram link
+      window.location.href = "https://t.me/BaseNutsCommunity";
     });
   }
 });
