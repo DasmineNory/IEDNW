@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ease: "power1.inOut",
       });
 
-      // Change text to indicate success
       copyBtn.textContent = "Copied!";
       setTimeout(() => {
         copyBtn.textContent = "COPY";
@@ -77,20 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "back.out(1.7)",
     scrollTrigger: {
       trigger: ".tokenomics-section",
-      start: "top 80%",
-      toggleActions: "play none none none",
-    },
-  });
-
-  // Meme Section Animation
-  gsap.from(".meme-box", {
-    opacity: 0,
-    scale: 0.5,
-    stagger: 0.2,
-    duration: 1,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".meme-section",
       start: "top 80%",
       toggleActions: "play none none none",
     },
