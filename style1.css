@@ -47,12 +47,12 @@ body {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .icon-container {
   display: flex;
-  gap: 7px;
+  gap: 5px;
   margin-right: 13px;
 }
 .icon-container a {
@@ -339,8 +339,9 @@ body {
   .navbar {
     max-width: 95%;
     padding: 8px;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
   }
 
   .brand-name {
@@ -359,9 +360,10 @@ body {
 
   /* Hero Section */
   .hero-section {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
     align-items: center;
+    justify-content: space-between;
   }
 
   .hero-content {
@@ -377,9 +379,31 @@ body {
     max-width: 280px;
   }
 
+  .hero-image {
+    width: 40%;
+    text-align: right;
+  }
+
   .contract-container {
     padding: 10px;
     width: 90%;
+  }
+  .marquee-section {
+    height: 30px;
+    padding: 5px 0;
+  }
+
+  .marquee {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .marquee img {
+    width: 18px;
+    height: auto;
   }
 
   /* Tokenomics Section */
@@ -407,26 +431,52 @@ body {
 /* Small Phones (max-width: 480px) */
 @media screen and (max-width: 480px) {
   .navbar {
-    max-width: 95%;
-    flex-direction: row;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 8px;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .nav-logo {
+    width: 30px;
+    height: auto;
   }
 
   .brand-name {
-    font-size: 12px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+  }
+
+  .icon-container {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
   }
 
   .nav-icon {
-    width: 20px;
-    height: 20px;
-    padding: 2px;
+    width: 28px;
   }
 
   .join-btn {
-    font-size: 10px;
+    display: block;
+    font-size: 12px;
     padding: 4px 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   /* Hero Section */
@@ -462,13 +512,39 @@ body {
 
   /* Contract Address */
   .contract-container {
-    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    padding: 6px;
+  }
+
+  .contract-address {
+    flex-grow: 1;
+    min-width: 0;
   }
 
   .copy-btn {
-    font-size: 10px;
-    padding: 5px;
+    padding: 5px 8px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .marquee-section {
+    height: 30px;
+    padding: 5px 0;
+  }
+
+  .marquee {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .marquee img {
+    width: 18px;
+    height: auto;
   }
 
   /* Tokenomics Section */
