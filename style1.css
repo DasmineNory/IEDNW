@@ -1,9 +1,14 @@
 /* style.css */
+@font-face {
+  font-family: "ComicBookBoldItalic";
+  src: url("./ComicBookBoldItalic.otf") format("opentype");
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #6a0dad;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "ComicBookBoldItalic", sans-serif;
 }
 
 html,
@@ -88,7 +93,7 @@ body {
   background-color: #00ff00;
   border: none;
   padding: 8px 12px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "ComicBookBoldItalic", sans-serif;
   font-size: 15px;
   font-weight: bold;
   border-radius: 12px;
